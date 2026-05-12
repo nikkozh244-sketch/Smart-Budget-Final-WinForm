@@ -44,6 +44,8 @@ namespace Smart_Budget
 
             _startNewWork.NavigateToHome += NavigateToHome;
 
+            helpProvider1.HelpNamespace = Path.Combine(Application.StartupPath, "Справочная служба.chm");
+
             ShowScreen(_homeScreen);
         }
 
@@ -65,10 +67,60 @@ namespace Smart_Budget
             _currentScreen = newScreen;
 
             if (_currentScreen == _firstTimeInApplication)
-                _firstTimeInApplication.StartVideo();        
+                _firstTimeInApplication.StartVideo();
         }
 
+        /// <summary>
+        ///Ручное переопределение нажима F1 
+        /// </summary>
+        /// <param name="msg"></param>
+        /// <param name="keyData"></param>
+        /// <returns></returns>
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        { 
+            if (keyData == Keys.F1)
+            {
+                // Вызываем метод открытия справки
+                ShowContextHelp();
+                return true;
+            }
 
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        /// <summary>
+        ///Метод для показа контекстной справки по экрану 
+        /// </summary>
+        private void ShowContextHelp()
+        {
+            //Формируем путь к файлу справки
+            string helpPath = Path.Combine(Application.StartupPath, "Справочная служба.chm");
+
+            //Проверяем, существует ли вообще наш справочный файл
+            if (!File.Exists(helpPath))
+                return;
+
+            //Определяем, какой экран сейчас активен, и переопределяем ключевое слово
+            string keyword = GetHelpKeywordForCurrentScreen();
+
+            //Открываем справку
+            if (!string.IsNullOrEmpty(keyword))
+                Help.ShowHelp(this, helpPath, HelpNavigator.KeywordIndex, keyword);
+            else
+                Help.ShowHelp(this, helpPath);
+        }
+
+        /// <summary>
+        ///Переопределение ключевых слов для справки 
+        /// </summary>
+        /// <returns></returns>
+        private string GetHelpKeywordForCurrentScreen() => _currentScreen?.GetType().Name switch
+        {
+            nameof(MainMenu) => "mainmenu",
+            nameof(Settings) => "settings",
+            nameof(StartNewWork) => "newwork",
+            _ => ""
+        };
 
         //РћР±СЂР°Р±РѕС‚С‡РёРєРё РЅР°РІРёРіР°С†РёРё
         private void NavigateToHome(object sender, EventArgs e)

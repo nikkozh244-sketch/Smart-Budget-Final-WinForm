@@ -36,6 +36,7 @@
             axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             richTextBox1 = new RichTextBox();
             label1 = new Label();
+            helpProvider1 = new HelpProvider();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).BeginInit();
             PanelMainScroll.SuspendLayout();
@@ -149,5 +150,6 @@
         private Label label1;
         private RichTextBox richTextBox1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private HelpProvider helpProvider1;
     }
 }

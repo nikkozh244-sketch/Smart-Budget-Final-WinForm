@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramForm));
             PanelContainer = new Panel();
+            helpProvider1 = new HelpProvider();
+            helpProvider1.HelpNamespace = Path.Combine(Application.StartupPath, "Справочная служба.chm");
             SuspendLayout();
             // 
             // PanelContainer
@@ -61,5 +63,6 @@
         #endregion
 
         private Panel PanelContainer;
+        public HelpProvider helpProvider1;
     }
 }

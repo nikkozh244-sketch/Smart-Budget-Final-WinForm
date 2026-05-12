@@ -47,6 +47,7 @@
             label2 = new Label();
             label1 = new Label();
             numericUpDown1 = new NumericUpDown();
+            helpProvider1 = new HelpProvider();
             ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -299,5 +300,6 @@
         private Button ChangeData;
         private Button AddData;
         private Button DoneEntering;
+        private HelpProvider helpProvider1;
     }
 }

@@ -38,6 +38,7 @@
             ButtonStartNewWork = new Button();
             Label = new Label();
             HelpButton = new Button();
+            helpProvider1 = new HelpProvider();
             ((System.ComponentModel.ISupportInitialize)IconOfApplication).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImageOfCat).BeginInit();
             SuspendLayout();
@@ -160,6 +161,7 @@
             HelpButton.Text = "ПОМОЩЬ (Справ. служба)";
             HelpButton.TextAlign = ContentAlignment.MiddleRight;
             HelpButton.UseVisualStyleBackColor = true;
+            HelpButton.Click += HelpButton_Click;
             // 
             // MainMenu
             // 
@@ -193,5 +195,6 @@
         private Button ButtonStartNewWork;
         private Label Label;
         private Button HelpButton;
+        private HelpProvider helpProvider1;
     }
 }

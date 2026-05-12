@@ -62,6 +62,7 @@
             LabelEnterDollar = new Label();
             LabelChangeDollar = new Label();
             DollarIcon = new PictureBox();
+            helpProvider1 = new HelpProvider();
             pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -519,5 +520,6 @@
         private Button ButtonContinueWork;
         private Button ButtonStartNewWork;
         private Label label6;
+        private HelpProvider helpProvider1;
     }
 }

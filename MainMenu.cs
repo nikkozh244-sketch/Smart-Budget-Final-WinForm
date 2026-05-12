@@ -50,5 +50,21 @@ namespace Smart_Budget
         {
             MessageBox.Show("В разработке");
         }
+
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+            // Путь к файлу справки
+            string helpFilePath = Application.StartupPath + "\\Справочная служба.chm";
+
+            // Проверяем, существует ли файл
+            if (System.IO.File.Exists(helpFilePath))
+            {
+                System.Windows.Forms.Help.ShowHelp(null, helpFilePath);
+            }
+            else
+            {
+                MessageBox.Show("Файл справки не найден: " + helpFilePath);
+            }
+        }
     }
 }
