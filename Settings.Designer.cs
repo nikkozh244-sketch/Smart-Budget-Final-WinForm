@@ -215,7 +215,7 @@
             LabelSettings.Name = "LabelSettings";
             LabelSettings.Size = new Size(812, 114);
             LabelSettings.TabIndex = 7;
-            LabelSettings.Text = "Добро пожаловать в меню настроек, мяу! Здесь вы можете настроить приложение специально под себя";
+            LabelSettings.Text = "Добро пожаловать в меню настроек, мяу! Здесь вы можете настроить приложение специально под себя. Откройте F1 после нажатия на любую из кнопок\r\n\r\n";
             LabelSettings.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1

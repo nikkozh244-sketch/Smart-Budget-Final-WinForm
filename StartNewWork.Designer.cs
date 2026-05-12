@@ -76,7 +76,7 @@
             LabelStartNewWork.Name = "LabelStartNewWork";
             LabelStartNewWork.Size = new Size(812, 111);
             LabelStartNewWork.TabIndex = 15;
-            LabelStartNewWork.Text = "Для начала работы - введите данные об операциях, мур!";
+            LabelStartNewWork.Text = "Для начала работы - введите данные об операциях, мур! Откройте F1 после нажатия на любую из кнопок\r\n\r\n";
             LabelStartNewWork.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
