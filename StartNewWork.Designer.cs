@@ -129,6 +129,7 @@
             DoneEntering.TabIndex = 13;
             DoneEntering.Text = "Готово";
             DoneEntering.UseVisualStyleBackColor = true;
+            DoneEntering.Click += DoneEntering_Click;
             // 
             // ChangeData
             // 

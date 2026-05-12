@@ -45,5 +45,10 @@ namespace Smart_Budget
             // Вызываем событие — главная форма поймет и переключит экран
             NavigateToStartNewWork?.Invoke(this, EventArgs.Empty);
         }
+
+        private void ButtonContinueWork_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке");
+        }
     }
 }

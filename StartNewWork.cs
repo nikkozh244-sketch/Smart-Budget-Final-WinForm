@@ -51,5 +51,10 @@ namespace Smart_Budget
         {
             ChangeLabel("Операция была успешно изменена!");
         }
+
+        private void DoneEntering_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("В разработке!!!");
+        }
     }
 }

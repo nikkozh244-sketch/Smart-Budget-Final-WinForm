@@ -212,7 +212,7 @@
             LabelSettings.ImageAlign = ContentAlignment.MiddleRight;
             LabelSettings.Location = new Point(106, 0);
             LabelSettings.Name = "LabelSettings";
-            LabelSettings.Size = new Size(812, 95);
+            LabelSettings.Size = new Size(812, 114);
             LabelSettings.TabIndex = 7;
             LabelSettings.Text = "Добро пожаловать в меню настроек, мяу! Здесь вы можете настроить приложение специально под себя";
             LabelSettings.TextAlign = ContentAlignment.MiddleLeft;
@@ -224,7 +224,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 95);
+            pictureBox1.Size = new Size(109, 114);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
@@ -252,9 +252,9 @@
             panel1.Controls.Add(DollarIcon);
             panel1.Controls.Add(ButtonResetSettings);
             panel1.Controls.Add(ButtonApplySettings);
-            panel1.Location = new Point(0, 97);
+            panel1.Location = new Point(0, 130);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1075, 615);
+            panel1.Size = new Size(1075, 582);
             panel1.TabIndex = 11;
             // 
             // checkBox3

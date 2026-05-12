@@ -37,6 +37,7 @@
             ButtonContinueWork = new Button();
             ButtonStartNewWork = new Button();
             Label = new Label();
+            HelpButton = new Button();
             ((System.ComponentModel.ISupportInitialize)IconOfApplication).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ImageOfCat).BeginInit();
             SuspendLayout();
@@ -70,9 +71,9 @@
             ButtonExit.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonExit.Font = new Font("Times New Roman", 22.2F);
             ButtonExit.ImeMode = ImeMode.NoControl;
-            ButtonExit.Location = new Point(694, 566);
+            ButtonExit.Location = new Point(598, 637);
             ButtonExit.Name = "ButtonExit";
-            ButtonExit.Size = new Size(363, 71);
+            ButtonExit.Size = new Size(459, 71);
             ButtonExit.TabIndex = 14;
             ButtonExit.Text = "Выход";
             ButtonExit.TextAlign = ContentAlignment.MiddleRight;
@@ -84,9 +85,9 @@
             ButtonSettings.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonSettings.Font = new Font("Times New Roman", 22.2F);
             ButtonSettings.ImeMode = ImeMode.NoControl;
-            ButtonSettings.Location = new Point(694, 465);
+            ButtonSettings.Location = new Point(598, 536);
             ButtonSettings.Name = "ButtonSettings";
-            ButtonSettings.Size = new Size(363, 71);
+            ButtonSettings.Size = new Size(459, 71);
             ButtonSettings.TabIndex = 13;
             ButtonSettings.Text = "Настройки";
             ButtonSettings.TextAlign = ContentAlignment.MiddleRight;
@@ -98,9 +99,9 @@
             ButtonFirstTime.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonFirstTime.Font = new Font("Times New Roman", 22.2F);
             ButtonFirstTime.ImeMode = ImeMode.NoControl;
-            ButtonFirstTime.Location = new Point(694, 363);
+            ButtonFirstTime.Location = new Point(598, 434);
             ButtonFirstTime.Name = "ButtonFirstTime";
-            ButtonFirstTime.Size = new Size(363, 71);
+            ButtonFirstTime.Size = new Size(459, 71);
             ButtonFirstTime.TabIndex = 12;
             ButtonFirstTime.Text = "О приложении";
             ButtonFirstTime.TextAlign = ContentAlignment.MiddleRight;
@@ -112,13 +113,14 @@
             ButtonContinueWork.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonContinueWork.Font = new Font("Times New Roman", 22.2F);
             ButtonContinueWork.ImeMode = ImeMode.NoControl;
-            ButtonContinueWork.Location = new Point(694, 164);
+            ButtonContinueWork.Location = new Point(598, 235);
             ButtonContinueWork.Name = "ButtonContinueWork";
-            ButtonContinueWork.Size = new Size(363, 71);
+            ButtonContinueWork.Size = new Size(459, 71);
             ButtonContinueWork.TabIndex = 11;
             ButtonContinueWork.Text = "Продолжить работу";
             ButtonContinueWork.TextAlign = ContentAlignment.MiddleRight;
             ButtonContinueWork.UseVisualStyleBackColor = true;
+            ButtonContinueWork.Click += ButtonContinueWork_Click;
             // 
             // ButtonStartNewWork
             // 
@@ -126,9 +128,9 @@
             ButtonStartNewWork.Font = new Font("Times New Roman", 22.2F);
             ButtonStartNewWork.ImageAlign = ContentAlignment.MiddleRight;
             ButtonStartNewWork.ImeMode = ImeMode.NoControl;
-            ButtonStartNewWork.Location = new Point(694, 263);
+            ButtonStartNewWork.Location = new Point(598, 334);
             ButtonStartNewWork.Name = "ButtonStartNewWork";
-            ButtonStartNewWork.Size = new Size(363, 71);
+            ButtonStartNewWork.Size = new Size(459, 71);
             ButtonStartNewWork.TabIndex = 10;
             ButtonStartNewWork.Text = "Начать новую работу";
             ButtonStartNewWork.TextAlign = ContentAlignment.MiddleRight;
@@ -146,10 +148,24 @@
             Label.TabIndex = 9;
             Label.Text = "Smart Budget";
             // 
+            // HelpButton
+            // 
+            HelpButton.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            HelpButton.Font = new Font("Times New Roman", 22.2F);
+            HelpButton.ImeMode = ImeMode.NoControl;
+            HelpButton.Location = new Point(598, 148);
+            HelpButton.Name = "HelpButton";
+            HelpButton.Size = new Size(459, 71);
+            HelpButton.TabIndex = 17;
+            HelpButton.Text = "ПОМОЩЬ (Справ. служба)";
+            HelpButton.TextAlign = ContentAlignment.MiddleRight;
+            HelpButton.UseVisualStyleBackColor = true;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(HelpButton);
             Controls.Add(IconOfApplication);
             Controls.Add(ImageOfCat);
             Controls.Add(ButtonExit);
@@ -176,5 +192,6 @@
         private Button ButtonContinueWork;
         private Button ButtonStartNewWork;
         private Label Label;
+        private Button HelpButton;
     }
 }
