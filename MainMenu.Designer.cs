@@ -36,7 +36,7 @@
             ButtonFirstTime = new Button();
             ButtonContinueWork = new Button();
             ButtonStartNewWork = new Button();
-            Label = new Label();
+            LabelOfApp = new Label();
             HelpButton = new Button();
             helpProvider1 = new HelpProvider();
             ((System.ComponentModel.ISupportInitialize)IconOfApplication).BeginInit();
@@ -72,9 +72,9 @@
             ButtonExit.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonExit.Font = new Font("Times New Roman", 22.2F);
             ButtonExit.ImeMode = ImeMode.NoControl;
-            ButtonExit.Location = new Point(598, 601);
+            ButtonExit.Location = new Point(641, 601);
             ButtonExit.Name = "ButtonExit";
-            ButtonExit.Size = new Size(459, 71);
+            ButtonExit.Size = new Size(416, 71);
             ButtonExit.TabIndex = 14;
             ButtonExit.Text = "Выход";
             ButtonExit.TextAlign = ContentAlignment.MiddleRight;
@@ -86,9 +86,9 @@
             ButtonSettings.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonSettings.Font = new Font("Times New Roman", 22.2F);
             ButtonSettings.ImeMode = ImeMode.NoControl;
-            ButtonSettings.Location = new Point(598, 500);
+            ButtonSettings.Location = new Point(641, 500);
             ButtonSettings.Name = "ButtonSettings";
-            ButtonSettings.Size = new Size(459, 71);
+            ButtonSettings.Size = new Size(416, 71);
             ButtonSettings.TabIndex = 13;
             ButtonSettings.Text = "Настройки";
             ButtonSettings.TextAlign = ContentAlignment.MiddleRight;
@@ -100,9 +100,9 @@
             ButtonFirstTime.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonFirstTime.Font = new Font("Times New Roman", 22.2F);
             ButtonFirstTime.ImeMode = ImeMode.NoControl;
-            ButtonFirstTime.Location = new Point(598, 398);
+            ButtonFirstTime.Location = new Point(641, 398);
             ButtonFirstTime.Name = "ButtonFirstTime";
-            ButtonFirstTime.Size = new Size(459, 71);
+            ButtonFirstTime.Size = new Size(416, 71);
             ButtonFirstTime.TabIndex = 12;
             ButtonFirstTime.Text = "О приложении";
             ButtonFirstTime.TextAlign = ContentAlignment.MiddleRight;
@@ -114,9 +114,9 @@
             ButtonContinueWork.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonContinueWork.Font = new Font("Times New Roman", 22.2F);
             ButtonContinueWork.ImeMode = ImeMode.NoControl;
-            ButtonContinueWork.Location = new Point(598, 199);
+            ButtonContinueWork.Location = new Point(641, 100);
             ButtonContinueWork.Name = "ButtonContinueWork";
-            ButtonContinueWork.Size = new Size(459, 71);
+            ButtonContinueWork.Size = new Size(416, 71);
             ButtonContinueWork.TabIndex = 11;
             ButtonContinueWork.Text = "Продолжить работу";
             ButtonContinueWork.TextAlign = ContentAlignment.MiddleRight;
@@ -129,36 +129,36 @@
             ButtonStartNewWork.Font = new Font("Times New Roman", 22.2F);
             ButtonStartNewWork.ImageAlign = ContentAlignment.MiddleRight;
             ButtonStartNewWork.ImeMode = ImeMode.NoControl;
-            ButtonStartNewWork.Location = new Point(598, 298);
+            ButtonStartNewWork.Location = new Point(641, 199);
             ButtonStartNewWork.Name = "ButtonStartNewWork";
-            ButtonStartNewWork.Size = new Size(459, 71);
+            ButtonStartNewWork.Size = new Size(416, 71);
             ButtonStartNewWork.TabIndex = 10;
             ButtonStartNewWork.Text = "Начать новую работу";
             ButtonStartNewWork.TextAlign = ContentAlignment.MiddleRight;
             ButtonStartNewWork.UseVisualStyleBackColor = true;
             ButtonStartNewWork.Click += ButtonStartNewWork_Click;
             // 
-            // Label
+            // LabelOfApp
             // 
-            Label.AutoSize = true;
-            Label.Font = new Font("Times New Roman", 48F, FontStyle.Bold);
-            Label.ImeMode = ImeMode.NoControl;
-            Label.Location = new Point(561, -8);
-            Label.Name = "Label";
-            Label.Size = new Size(514, 90);
-            Label.TabIndex = 9;
-            Label.Text = "Smart Budget";
+            LabelOfApp.AutoSize = true;
+            LabelOfApp.Font = new Font("Times New Roman", 48F, FontStyle.Bold);
+            LabelOfApp.ImeMode = ImeMode.NoControl;
+            LabelOfApp.Location = new Point(561, -8);
+            LabelOfApp.Name = "LabelOfApp";
+            LabelOfApp.Size = new Size(514, 90);
+            LabelOfApp.TabIndex = 9;
+            LabelOfApp.Text = "Smart Budget";
             // 
             // HelpButton
             // 
             HelpButton.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             HelpButton.Font = new Font("Times New Roman", 22.2F);
             HelpButton.ImeMode = ImeMode.NoControl;
-            HelpButton.Location = new Point(598, 103);
+            HelpButton.Location = new Point(641, 297);
             HelpButton.Name = "HelpButton";
-            HelpButton.Size = new Size(459, 71);
+            HelpButton.Size = new Size(416, 71);
             HelpButton.TabIndex = 17;
-            HelpButton.Text = "ПОМОЩЬ (Справ. служба)";
+            HelpButton.Text = "Помощь (Справ. служба)";
             HelpButton.TextAlign = ContentAlignment.MiddleRight;
             HelpButton.UseVisualStyleBackColor = true;
             HelpButton.Click += HelpButton_Click;
@@ -175,7 +175,7 @@
             Controls.Add(ButtonFirstTime);
             Controls.Add(ButtonContinueWork);
             Controls.Add(ButtonStartNewWork);
-            Controls.Add(Label);
+            Controls.Add(LabelOfApp);
             Name = "MainMenu";
             Size = new Size(1075, 712);
             ((System.ComponentModel.ISupportInitialize)IconOfApplication).EndInit();
@@ -193,7 +193,7 @@
         private Button ButtonFirstTime;
         private Button ButtonContinueWork;
         private Button ButtonStartNewWork;
-        private Label Label;
+        private Label LabelOfApp;
         private Button HelpButton;
         private HelpProvider helpProvider1;
     }

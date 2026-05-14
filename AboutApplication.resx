@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LabelSettings.Text" xml:space="preserve">
+  <data name="LabelAboutApp.Text" xml:space="preserve">
     <value>Мур-р-р! Приветствую вас в Smart Budget - приложении,  способном облегчить вам работу с финансовыми данными! Просмотрите короткое видео для ознакомления с нашим приложением или прочтите инструкцию ниже</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PictureCat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGkAAACCCAYAAABFAeZ7AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfqBQgKFTEdo1YjAACD+ElEQVR4Xuz9B3Dj2XHvi/9kOV1b
@@ -691,7 +691,7 @@
         rkJggg==
 </value>
   </data>
-  <data name="OpenMenuIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="IconOpenMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGEAAABhCAYAAADGBs+jAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAHdElNRQfqBQkSODGXAJlhAAAA
@@ -708,7 +708,7 @@
         9V6l0Ut9TgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="axWindowsMediaPlayer1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="VideoTeaching.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
         LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAhU3lzdGVtLldpbmRvd3MuRm9ybXMu
@@ -718,7 +718,7 @@
         AAgAAgAAAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACwAAAAI0AAADKQAACw==
 </value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="TextTeaching.Text" xml:space="preserve">
     <value>Здесь должно быть очень много обучающего текста, но так как мы его еще не придумали, давайте вместо этого расскажу о прикольном флоте. Вадиму Олеговичу посчастливвилось уже почитать о нем, когда мы первое задание по техдокам выполняли, так что теперь пора и здесь оставить прикольный флот. А вообще нужно просто много текста в качестве заглушки на пока что. Как вы поняли по видео, самого видео у нас также пока нет. Не критично ведь?
 Пожалейте меня, пожалуйста, я это в 4 утра печатаю. Если бы я ещё придумывал инструкцию к этому приложению, то я бы с ума сошел окончательно. Вместо обучающего видео гляньте пока смешную нарезку из сериала Папины дочки, там в основном про Тамару
 В любом случае... 

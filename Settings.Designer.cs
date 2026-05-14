@@ -38,41 +38,41 @@
             label6 = new Label();
             ButtonResetSettings = new Button();
             ButtonApplySettings = new Button();
-            OpenMenuIcon = new PictureBox();
+            IconOpenMenu = new PictureBox();
             LabelSettings = new Label();
-            pictureBox1 = new PictureBox();
+            CatPicture = new PictureBox();
             panel1 = new Panel();
             checkBox3 = new CheckBox();
             label4 = new Label();
             label5 = new Label();
-            pictureBox5 = new PictureBox();
+            IconDog = new PictureBox();
             checkBox2 = new CheckBox();
             label2 = new Label();
             label3 = new Label();
-            pictureBox4 = new PictureBox();
+            IconMouse = new PictureBox();
             checkBox1 = new CheckBox();
             LabelDarkOnOrOff = new Label();
             LabelDarkTheme = new Label();
-            pictureBox2 = new PictureBox();
+            IconDarkTheme = new PictureBox();
             comboBox1 = new ComboBox();
             label1 = new Label();
             LabelChangeLanguage = new Label();
-            pictureBox3 = new PictureBox();
+            IconTranslate = new PictureBox();
             numericUpDown1 = new NumericUpDown();
             LabelEnterDollar = new Label();
             LabelChangeDollar = new Label();
-            DollarIcon = new PictureBox();
+            IconDollar = new PictureBox();
             helpProvider1 = new HelpProvider();
             pnlMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconOpenMenu).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CatPicture).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconDog).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconMouse).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconDarkTheme).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconTranslate).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)DollarIcon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)IconDollar).BeginInit();
             SuspendLayout();
             // 
             // pnlMenu
@@ -194,15 +194,15 @@
             ButtonApplySettings.UseVisualStyleBackColor = true;
             ButtonApplySettings.Click += ButtonApplySettings_Click;
             // 
-            // OpenMenuIcon
+            // IconOpenMenu
             // 
-            OpenMenuIcon.Image = (Image)resources.GetObject("OpenMenuIcon.Image");
-            OpenMenuIcon.Location = new Point(945, 3);
-            OpenMenuIcon.Name = "OpenMenuIcon";
-            OpenMenuIcon.Size = new Size(98, 92);
-            OpenMenuIcon.TabIndex = 8;
-            OpenMenuIcon.TabStop = false;
-            OpenMenuIcon.Click += OpenMenuIcon_Click;
+            IconOpenMenu.Image = (Image)resources.GetObject("IconOpenMenu.Image");
+            IconOpenMenu.Location = new Point(945, 3);
+            IconOpenMenu.Name = "IconOpenMenu";
+            IconOpenMenu.Size = new Size(98, 92);
+            IconOpenMenu.TabIndex = 8;
+            IconOpenMenu.TabStop = false;
+            IconOpenMenu.Click += OpenMenuIcon_Click;
             // 
             // LabelSettings
             // 
@@ -218,39 +218,39 @@
             LabelSettings.Text = "Добро пожаловать в меню настроек, мяу! Здесь вы можете настроить приложение специально под себя. Откройте F1 после нажатия на любую из кнопок\r\n\r\n";
             LabelSettings.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
+            // CatPicture
             // 
-            pictureBox1.BackColor = SystemColors.Window;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 114);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            CatPicture.BackColor = SystemColors.Window;
+            CatPicture.BorderStyle = BorderStyle.FixedSingle;
+            CatPicture.Image = (Image)resources.GetObject("CatPicture.Image");
+            CatPicture.Location = new Point(0, 0);
+            CatPicture.Name = "CatPicture";
+            CatPicture.Size = new Size(109, 114);
+            CatPicture.TabIndex = 6;
+            CatPicture.TabStop = false;
             // 
             // panel1
             // 
             panel1.Controls.Add(checkBox3);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(IconDog);
             panel1.Controls.Add(checkBox2);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(IconMouse);
             panel1.Controls.Add(checkBox1);
             panel1.Controls.Add(LabelDarkOnOrOff);
             panel1.Controls.Add(LabelDarkTheme);
-            panel1.Controls.Add(pictureBox2);
+            panel1.Controls.Add(IconDarkTheme);
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(LabelChangeLanguage);
-            panel1.Controls.Add(pictureBox3);
+            panel1.Controls.Add(IconTranslate);
             panel1.Controls.Add(numericUpDown1);
             panel1.Controls.Add(LabelEnterDollar);
             panel1.Controls.Add(LabelChangeDollar);
-            panel1.Controls.Add(DollarIcon);
+            panel1.Controls.Add(IconDollar);
             panel1.Controls.Add(ButtonResetSettings);
             panel1.Controls.Add(ButtonApplySettings);
             panel1.Location = new Point(0, 130);
@@ -289,14 +289,14 @@
             label5.TabIndex = 28;
             label5.Text = "\"Режим собачника\"";
             // 
-            // pictureBox5
+            // IconDog
             // 
-            pictureBox5.Image = Properties.Resources.free_icon_paw_672675;
-            pictureBox5.Location = new Point(547, 309);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(70, 70);
-            pictureBox5.TabIndex = 27;
-            pictureBox5.TabStop = false;
+            IconDog.Image = Properties.Resources.free_icon_paw_672675;
+            IconDog.Location = new Point(547, 309);
+            IconDog.Name = "IconDog";
+            IconDog.Size = new Size(70, 70);
+            IconDog.TabIndex = 27;
+            IconDog.TabStop = false;
             // 
             // checkBox2
             // 
@@ -329,14 +329,15 @@
             label3.TabIndex = 24;
             label3.Text = "\"Режим левши\"";
             // 
-            // pictureBox4
+            // IconMouse
             // 
-            pictureBox4.Image = Properties.Resources.free_icon_lefty_mouse_16566__2_;
-            pictureBox4.Location = new Point(547, 169);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(70, 70);
-            pictureBox4.TabIndex = 23;
-            pictureBox4.TabStop = false;
+            IconMouse.Image = Properties.Resources.free_icon_lefty_mouse_16566__2_;
+            IconMouse.Location = new Point(547, 169);
+            IconMouse.Name = "IconMouse";
+            IconMouse.Size = new Size(70, 70);
+            IconMouse.TabIndex = 23;
+            IconMouse.TabStop = false;
+            IconMouse.Click += pictureBox4_Click;
             // 
             // checkBox1
             // 
@@ -369,14 +370,14 @@
             LabelDarkTheme.TabIndex = 20;
             LabelDarkTheme.Text = "Тёмная тема";
             // 
-            // pictureBox2
+            // IconDarkTheme
             // 
-            pictureBox2.Image = Properties.Resources.free_icon_night_mode_12377255__2_;
-            pictureBox2.Location = new Point(14, 309);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(70, 70);
-            pictureBox2.TabIndex = 19;
-            pictureBox2.TabStop = false;
+            IconDarkTheme.Image = Properties.Resources.free_icon_night_mode_12377255__2_;
+            IconDarkTheme.Location = new Point(14, 309);
+            IconDarkTheme.Name = "IconDarkTheme";
+            IconDarkTheme.Size = new Size(70, 70);
+            IconDarkTheme.TabIndex = 19;
+            IconDarkTheme.TabStop = false;
             // 
             // comboBox1
             // 
@@ -409,19 +410,21 @@
             LabelChangeLanguage.TabIndex = 16;
             LabelChangeLanguage.Text = "Смена языка";
             // 
-            // pictureBox3
+            // IconTranslate
             // 
-            pictureBox3.Image = Properties.Resources.free_icon_translating_6490410__2_;
-            pictureBox3.Location = new Point(14, 169);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(70, 70);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
+            IconTranslate.Image = Properties.Resources.free_icon_translating_6490410__2_;
+            IconTranslate.Location = new Point(14, 169);
+            IconTranslate.Name = "IconTranslate";
+            IconTranslate.Size = new Size(70, 70);
+            IconTranslate.TabIndex = 15;
+            IconTranslate.TabStop = false;
             // 
             // numericUpDown1
             // 
+            numericUpDown1.BackColor = Color.White;
             numericUpDown1.BorderStyle = BorderStyle.FixedSingle;
             numericUpDown1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            numericUpDown1.ForeColor = SystemColors.InfoText;
             numericUpDown1.Location = new Point(728, 81);
             numericUpDown1.Maximum = new decimal(new int[] { 121, 0, 0, 0 });
             numericUpDown1.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
@@ -451,38 +454,38 @@
             LabelChangeDollar.TabIndex = 12;
             LabelChangeDollar.Text = "Смена курса доллара";
             // 
-            // DollarIcon
+            // IconDollar
             // 
-            DollarIcon.Image = Properties.Resources.free_icon_dollar_symbol_126179;
-            DollarIcon.Location = new Point(337, 39);
-            DollarIcon.Name = "DollarIcon";
-            DollarIcon.Size = new Size(70, 70);
-            DollarIcon.TabIndex = 11;
-            DollarIcon.TabStop = false;
+            IconDollar.Image = Properties.Resources.free_icon_dollar_symbol_126179;
+            IconDollar.Location = new Point(337, 39);
+            IconDollar.Name = "IconDollar";
+            IconDollar.Size = new Size(70, 70);
+            IconDollar.TabIndex = 11;
+            IconDollar.TabStop = false;
             // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
-            Controls.Add(OpenMenuIcon);
+            Controls.Add(IconOpenMenu);
             Controls.Add(LabelSettings);
-            Controls.Add(pictureBox1);
+            Controls.Add(CatPicture);
             Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Name = "Settings";
             Size = new Size(1075, 712);
             pnlMenu.ResumeLayout(false);
             pnlMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconOpenMenu).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CatPicture).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconDog).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconMouse).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconDarkTheme).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconTranslate).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)DollarIcon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)IconDollar).EndInit();
             ResumeLayout(false);
         }
 
@@ -490,30 +493,30 @@
         private Panel pnlMenu;
         private Button ButtonResetSettings;
         private Button ButtonApplySettings;
-        private PictureBox OpenMenuIcon;
+        private PictureBox IconOpenMenu;
         private Label LabelSettings;
-        private PictureBox pictureBox1;
+        private PictureBox CatPicture;
         private Panel panel1;
         private Label LabelChangeDollar;
-        private PictureBox DollarIcon;
+        private PictureBox IconDollar;
         private Label LabelEnterDollar;
         private NumericUpDown numericUpDown1;
-        private PictureBox pictureBox3;
+        private PictureBox IconTranslate;
         private Label LabelChangeLanguage;
         private ComboBox comboBox1;
         private Label label1;
         private CheckBox checkBox1;
         private Label LabelDarkOnOrOff;
         private Label LabelDarkTheme;
-        private PictureBox pictureBox2;
+        private PictureBox IconDarkTheme;
         private CheckBox checkBox3;
         private Label label4;
         private Label label5;
-        private PictureBox pictureBox5;
+        private PictureBox IconDog;
         private CheckBox checkBox2;
         private Label label2;
         private Label label3;
-        private PictureBox pictureBox4;
+        private PictureBox IconMouse;
         private Button ButtonReturnToHome;
         private Button ButtonSettings;
         private Button ButtonFirstTime;

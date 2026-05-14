@@ -11,7 +11,7 @@ using System.IO;
 
 namespace Smart_Budget
 {
-    public partial class FirstTimeInApplication : UserControl
+    public partial class AboutApplication : UserControl
     {
         //События экрана
         public event EventHandler NavigateToHome;
@@ -21,7 +21,7 @@ namespace Smart_Budget
         /// <summary>
         /// Инициализация экрана
         /// </summary>
-        public FirstTimeInApplication()
+        public AboutApplication()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace Smart_Budget
         /// </summary>
         public void StopVideo() 
         { 
-            axWindowsMediaPlayer1.Ctlcontrols.stop(); 
+            VideoTeaching.Ctlcontrols.stop(); 
         }
 
         /// <summary>
@@ -51,10 +51,10 @@ namespace Smart_Budget
 
             if (File.Exists(videoPath))
             {
-                axWindowsMediaPlayer1.stretchToFit = true;
-                axWindowsMediaPlayer1.URL = videoPath;
-                axWindowsMediaPlayer1.Ctlcontrols.stop();
-                axWindowsMediaPlayer1.uiMode = "full";
+                VideoTeaching.stretchToFit = true;
+                VideoTeaching.URL = videoPath;
+                VideoTeaching.Ctlcontrols.stop();
+                VideoTeaching.uiMode = "full";
             }
             else
                 MessageBox.Show($"Видео не найдено: {videoPath}");
@@ -78,7 +78,7 @@ namespace Smart_Budget
         private void OpenMenuIcon_Click_1(object sender, EventArgs e)
         {
             NavigateToHome?.Invoke(this, EventArgs.Empty);
-            axWindowsMediaPlayer1.Location = new Point(249, 0);
+            VideoTeaching.Location = new Point(249, 0);
         }
     }
 }

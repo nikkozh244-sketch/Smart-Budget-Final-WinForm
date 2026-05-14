@@ -6,7 +6,7 @@ namespace Smart_Budget
     {
         private MainMenu _homeScreen;
         private Settings _settingsScreen;
-        private FirstTimeInApplication _firstTimeInApplication;
+        private AboutApplication _firstTimeInApplication;
         private GetAnalys _getAnalysis;
         private StartNewWork _startNewWork;
         private UserControl _currentScreen;
@@ -17,7 +17,7 @@ namespace Smart_Budget
 
             _homeScreen = new MainMenu();
             _settingsScreen = new Settings();
-            _firstTimeInApplication = new FirstTimeInApplication();
+            _firstTimeInApplication = new AboutApplication();
             _getAnalysis = new GetAnalys();
             _startNewWork = new StartNewWork();
 
