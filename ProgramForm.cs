@@ -9,19 +9,12 @@ namespace Smart_Budget
         private FirstTimeInApplication _firstTimeInApplication;
         private GetAnalys _getAnalysis;
         private StartNewWork _startNewWork;
-
-
-        // РўРµРєСѓС‰РёР№ Р°РєС‚РёРІРЅС‹Р№ РєРѕРЅС‚СЂРѕР»
         private UserControl _currentScreen;
 
-        /// <summary>
-        /// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ СЃ РёРЅРёС†РёР°Р»РёР·Р°С†РёРµР№ РєРѕРјРїРѕРЅРµРЅС‚РѕРІ С„РѕСЂРјС‹
-        /// </summary>
         public ProgramForm()
         {
             InitializeComponent();
 
-            // РЎРѕР·РґР°РµРј СЌРєСЂР°РЅС‹
             _homeScreen = new MainMenu();
             _settingsScreen = new Settings();
             _firstTimeInApplication = new FirstTimeInApplication();
@@ -29,8 +22,6 @@ namespace Smart_Budget
             _startNewWork = new StartNewWork();
 
 
-            // РџРѕРґРїРёСЃС‹РІР°РµРјСЃСЏ РЅР° СЃРѕР±С‹С‚РёСЏ РєРЅРѕРїРѕРє РІРЅСѓС‚СЂРё РєРѕРЅС‚СЂРѕР»РѕРІ
-            //_homeScreen.NavigateToFirstTime += NavigateToStartNewWork;
             _homeScreen.NavigateToFirstTime += NavigateToFirstTime;
             _homeScreen.NavigateToSettings += NavigateToSettings;
             _homeScreen.CloseApplication += CloseApplication;
@@ -49,10 +40,6 @@ namespace Smart_Budget
             ShowScreen(_homeScreen);
         }
 
-        /// <summary>
-        ///РњРµС‚РѕРґ РґР»СЏ Р±РµСЃС€РѕРІРЅРѕР№ СЃРјРµРЅС‹ СЌРєСЂР°РЅР°
-        /// </summary>
-        /// <param name="newScreen">РџСЂРёРЅРёРјР°РµРјС‹Р№ РЅРѕРІС‹Р№ СЌРєСЂР°РЅ</param>
         private void ShowScreen(UserControl newScreen)
         {
             if (_currentScreen == newScreen) 
@@ -80,7 +67,6 @@ namespace Smart_Budget
         { 
             if (keyData == Keys.F1)
             {
-                // Вызываем метод открытия справки
                 ShowContextHelp();
                 return true;
             }
@@ -119,14 +105,12 @@ namespace Smart_Budget
             nameof(MainMenu) => "mainmenu",
             nameof(Settings) => "settings",
             nameof(StartNewWork) => "newwork",
-            _ => ""
         };
 
-        //РћР±СЂР°Р±РѕС‚С‡РёРєРё РЅР°РІРёРіР°С†РёРё
         private void NavigateToHome(object sender, EventArgs e)
         {
             ShowScreen(_homeScreen);
-            _firstTimeInApplication.StopVideo(); //Р”Р»СЏ СЌРєСЂР°РЅР° "Рћ РїСЂРёР»РѕР¶РµРЅРёРё", РєРѕРіРґР° РЅРµРѕР±С…РѕРґРёРјРѕ РѕСЃС‚Р°РЅР°РІР»РёРІР°С‚СЊ РІРёРґРµРѕ
+            _firstTimeInApplication.StopVideo();
         }
 
         private void NavigateToFirstTime(object sender, EventArgs e)
@@ -144,9 +128,16 @@ namespace Smart_Budget
             ShowScreen(_startNewWork);
         }
 
+        /// <summary>
+        ///Определение метода для закрытия приложения (тут же должна идти выгрузка параметров настроек) 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CloseApplication(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        //РЕАЛИЗОВАТЬ МЕТОД ДЛЯ ЗАГРУЗКИ НАСТРОЕК!!!
     }
 }

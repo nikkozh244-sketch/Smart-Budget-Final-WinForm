@@ -13,25 +13,38 @@ namespace Smart_Budget
 {
     public partial class FirstTimeInApplication : UserControl
     {
+        //События экрана
         public event EventHandler NavigateToHome;
-        public event EventHandler NavigateToStartNewWork;
+        public event EventHandler NavigateToStartNewWork; //СПРОСИТЬ ПРО МЕНЮ!!!
         public event EventHandler NavigateToSettings;
 
+        /// <summary>
+        /// Инициализация экрана
+        /// </summary>
         public FirstTimeInApplication()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        ///Публичный метод, подгружающий обучающее видео (чтобы не трогать LoadVideo) 
+        /// </summary>
         public void StartVideo()
         {
             LoadVideo();
         }
 
+        /// <summary>
+        ///Метод, останавливающий обучающее видео 
+        /// </summary>
         public void StopVideo() 
         { 
             axWindowsMediaPlayer1.Ctlcontrols.stop(); 
         }
 
+        /// <summary>
+        /// Метод для выгрузки обучающего видео
+        /// </summary>
         private void LoadVideo()
         {
             string videoPath = Path.Combine(Application.StartupPath, "Обучающее видео, заглушка.mp4");
@@ -56,7 +69,12 @@ namespace Smart_Budget
         {
 
         }
-
+        
+        /// <summary>
+        ///Открытие меню 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OpenMenuIcon_Click_1(object sender, EventArgs e)
         {
             NavigateToHome?.Invoke(this, EventArgs.Empty);

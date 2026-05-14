@@ -18,20 +18,22 @@ namespace Smart_Budget
         public event EventHandler CloseApplication;
         public event EventHandler NavigateToStartNewWork;
 
+        /// <summary>
+        ///Инициализация экрана 
+        /// </summary>
         public MainMenu()
         {
             InitializeComponent();
         }
 
+        //Методы для кнопок, перенаправляющие на тот или иной экран
         private void ButtonSettings_Click(object sender, EventArgs e)
         {
-            // Вызываем событие — главная форма поймет и переключит экран
             NavigateToSettings?.Invoke(this, EventArgs.Empty);
         }
 
         private void ButtonFirstTime_Click(object sender, EventArgs e)
         {
-            // Вызываем событие — главная форма поймет и переключит экран
             NavigateToFirstTime?.Invoke(this, EventArgs.Empty);
         }
 
@@ -42,7 +44,6 @@ namespace Smart_Budget
 
         private void ButtonStartNewWork_Click(object sender, EventArgs e)
         {
-            // Вызываем событие — главная форма поймет и переключит экран
             NavigateToStartNewWork?.Invoke(this, EventArgs.Empty);
         }
 
@@ -51,6 +52,11 @@ namespace Smart_Budget
             MessageBox.Show("В разработке");
         }
 
+        /// <summary>
+        ///Кнопка для открытия справочной службы приложения 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void HelpButton_Click(object sender, EventArgs e)
         {
             // Путь к файлу справки
@@ -58,13 +64,9 @@ namespace Smart_Budget
 
             // Проверяем, существует ли файл
             if (System.IO.File.Exists(helpFilePath))
-            {
                 System.Windows.Forms.Help.ShowHelp(null, helpFilePath);
-            }
             else
-            {
                 MessageBox.Show("Файл справки не найден: " + helpFilePath);
-            }
         }
     }
 }

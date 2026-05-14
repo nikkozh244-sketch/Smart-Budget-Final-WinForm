@@ -47,7 +47,7 @@
             // 
             IconOfApplication.Image = (Image)resources.GetObject("IconOfApplication.Image");
             IconOfApplication.ImeMode = ImeMode.NoControl;
-            IconOfApplication.Location = new Point(493, 44);
+            IconOfApplication.Location = new Point(493, 8);
             IconOfApplication.Name = "IconOfApplication";
             IconOfApplication.Size = new Size(77, 74);
             IconOfApplication.TabIndex = 16;
@@ -72,7 +72,7 @@
             ButtonExit.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonExit.Font = new Font("Times New Roman", 22.2F);
             ButtonExit.ImeMode = ImeMode.NoControl;
-            ButtonExit.Location = new Point(598, 637);
+            ButtonExit.Location = new Point(598, 601);
             ButtonExit.Name = "ButtonExit";
             ButtonExit.Size = new Size(459, 71);
             ButtonExit.TabIndex = 14;
@@ -86,7 +86,7 @@
             ButtonSettings.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonSettings.Font = new Font("Times New Roman", 22.2F);
             ButtonSettings.ImeMode = ImeMode.NoControl;
-            ButtonSettings.Location = new Point(598, 536);
+            ButtonSettings.Location = new Point(598, 500);
             ButtonSettings.Name = "ButtonSettings";
             ButtonSettings.Size = new Size(459, 71);
             ButtonSettings.TabIndex = 13;
@@ -100,7 +100,7 @@
             ButtonFirstTime.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonFirstTime.Font = new Font("Times New Roman", 22.2F);
             ButtonFirstTime.ImeMode = ImeMode.NoControl;
-            ButtonFirstTime.Location = new Point(598, 434);
+            ButtonFirstTime.Location = new Point(598, 398);
             ButtonFirstTime.Name = "ButtonFirstTime";
             ButtonFirstTime.Size = new Size(459, 71);
             ButtonFirstTime.TabIndex = 12;
@@ -114,7 +114,7 @@
             ButtonContinueWork.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             ButtonContinueWork.Font = new Font("Times New Roman", 22.2F);
             ButtonContinueWork.ImeMode = ImeMode.NoControl;
-            ButtonContinueWork.Location = new Point(598, 235);
+            ButtonContinueWork.Location = new Point(598, 199);
             ButtonContinueWork.Name = "ButtonContinueWork";
             ButtonContinueWork.Size = new Size(459, 71);
             ButtonContinueWork.TabIndex = 11;
@@ -129,7 +129,7 @@
             ButtonStartNewWork.Font = new Font("Times New Roman", 22.2F);
             ButtonStartNewWork.ImageAlign = ContentAlignment.MiddleRight;
             ButtonStartNewWork.ImeMode = ImeMode.NoControl;
-            ButtonStartNewWork.Location = new Point(598, 334);
+            ButtonStartNewWork.Location = new Point(598, 298);
             ButtonStartNewWork.Name = "ButtonStartNewWork";
             ButtonStartNewWork.Size = new Size(459, 71);
             ButtonStartNewWork.TabIndex = 10;
@@ -143,7 +143,7 @@
             Label.AutoSize = true;
             Label.Font = new Font("Times New Roman", 48F, FontStyle.Bold);
             Label.ImeMode = ImeMode.NoControl;
-            Label.Location = new Point(561, 28);
+            Label.Location = new Point(561, -8);
             Label.Name = "Label";
             Label.Size = new Size(514, 90);
             Label.TabIndex = 9;
@@ -154,7 +154,7 @@
             HelpButton.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             HelpButton.Font = new Font("Times New Roman", 22.2F);
             HelpButton.ImeMode = ImeMode.NoControl;
-            HelpButton.Location = new Point(598, 148);
+            HelpButton.Location = new Point(598, 103);
             HelpButton.Name = "HelpButton";
             HelpButton.Size = new Size(459, 71);
             HelpButton.TabIndex = 17;

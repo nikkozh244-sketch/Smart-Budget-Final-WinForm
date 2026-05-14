@@ -158,7 +158,7 @@
             // 
             dateTimePicker1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
             dateTimePicker1.Location = new Point(17, 396);
-            dateTimePicker1.MaxDate = new DateTime(2026, 5, 12, 0, 0, 0, 0);
+            dateTimePicker1.MaxDate = new DateTime(2026, 6, 20, 0, 0, 0, 0);
             dateTimePicker1.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(320, 34);

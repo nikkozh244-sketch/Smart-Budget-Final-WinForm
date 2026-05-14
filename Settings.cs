@@ -12,16 +12,36 @@ namespace Smart_Budget
 {
     public partial class Settings : UserControl
     {
+        // События экрана (СПРОСИТЬ ПРО МЕНЮШКУ!!!!!!!!!!)
         public event EventHandler NavigateToHome;
         public event EventHandler NavigateToFirstTime;
         public event EventHandler NavigateToStartNewWork;
         public event EventHandler NavigateToSettings;
 
+        /// <summary>
+        ///Инициализация экрана 
+        /// </summary>
         public Settings()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        ///Метод для временного изменения текста сообщения пользователю (ИЗМЕНИТЬ, ТАК КАК ЕСТЬ ШАНС ПОЛНОСТЬЮ ИЗБАВИТЬСЯ ОТ ОСНОВНОГО ЗАГОЛОВКА!!!) 
+        /// </summary>
+        /// <param name="message">Выводимое сообщение</param>
+        /// <returns></returns>
+        private async Task ChangeLabel(string message)
+        {
+            string originalText = LabelSettings.Text;
+            LabelSettings.Text = message;
+            await Task.Delay(2000);
+            LabelSettings.Text = originalText;
+        }
+
+        /// <summary>
+        ///Метод для показа меню (СПРОСИТЬ!!!) 
+        /// </summary>
         private void ShowMenu()
         {
             pnlMenu.BackColor = Color.White;
@@ -29,11 +49,15 @@ namespace Smart_Budget
             pnlMenu.Visible = true;
         }
 
+        /// <summary>
+        ///Метод, чтобы спрятать меню (ВНОВЬ СПРОСИТЬ!!!) 
+        /// </summary>
         private void HideMenu()
         {
             pnlMenu.Visible = false;
         }
 
+        //Кнопки
         private void OpenMenuIcon_Click(object sender, EventArgs e)
         {
             NavigateToHome?.Invoke(this, EventArgs.Empty);
@@ -42,12 +66,12 @@ namespace Smart_Budget
 
         private void ButtonApplySettings_Click(object sender, EventArgs e)
         {
-            LabelSettings.Text = "Настройки успешно применены, мяу!";
+            ChangeLabel("Настройки успешно применены, мяу!");
         }
 
         private void ButtonResetSettings_Click(object sender, EventArgs e)
         {
-            LabelSettings.Text = "Мур! Настройки сброшены до изначальных!";
+            ChangeLabel("Мур! Настройки сброшены до изначальных!");
         }
 
         private void ButtonFirstTime_Click(object sender, EventArgs e)
