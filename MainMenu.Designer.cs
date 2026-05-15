@@ -47,7 +47,7 @@
             // 
             IconOfApplication.Image = (Image)resources.GetObject("IconOfApplication.Image");
             IconOfApplication.ImeMode = ImeMode.NoControl;
-            IconOfApplication.Location = new Point(493, 8);
+            IconOfApplication.Location = new Point(496, 3);
             IconOfApplication.Name = "IconOfApplication";
             IconOfApplication.Size = new Size(77, 74);
             IconOfApplication.TabIndex = 16;
@@ -126,6 +126,10 @@
             // ButtonStartNewWork
             // 
             ButtonStartNewWork.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ButtonStartNewWork.BackColor = SystemColors.ButtonHighlight;
+            ButtonStartNewWork.FlatAppearance.BorderColor = Color.Black;
+            ButtonStartNewWork.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            ButtonStartNewWork.FlatAppearance.MouseOverBackColor = Color.Transparent;
             ButtonStartNewWork.Font = new Font("Times New Roman", 22.2F);
             ButtonStartNewWork.ImageAlign = ContentAlignment.MiddleRight;
             ButtonStartNewWork.ImeMode = ImeMode.NoControl;
@@ -135,7 +139,7 @@
             ButtonStartNewWork.TabIndex = 10;
             ButtonStartNewWork.Text = "Начать новую работу";
             ButtonStartNewWork.TextAlign = ContentAlignment.MiddleRight;
-            ButtonStartNewWork.UseVisualStyleBackColor = true;
+            ButtonStartNewWork.UseVisualStyleBackColor = false;
             ButtonStartNewWork.Click += ButtonStartNewWork_Click;
             // 
             // LabelOfApp

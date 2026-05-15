@@ -31,28 +31,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartNewWork));
             OpenMenuIcon = new PictureBox();
             LabelStartNewWork = new Label();
-            pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
             panel1 = new Panel();
-            DoneEntering = new Button();
-            ChangeData = new Button();
-            AddData = new Button();
-            dateTimePicker1 = new DateTimePicker();
-            label5 = new Label();
-            comboBox3 = new ComboBox();
-            label4 = new Label();
-            comboBox2 = new ComboBox();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
-            label2 = new Label();
-            label1 = new Label();
-            numericUpDown1 = new NumericUpDown();
+            ButtonDoneEntering = new Button();
+            ButtonChangeData = new Button();
+            ButtonAddData = new Button();
+            DatePicker = new DateTimePicker();
+            LabelDate = new Label();
+            ComboBoxCurrency = new ComboBox();
+            LabelCurrency = new Label();
+            ComboBoxCaregory = new ComboBox();
+            LabelCategory = new Label();
+            ComboBoxType = new ComboBox();
+            LabelType = new Label();
+            LabelAmount = new Label();
+            NumericAmount = new NumericUpDown();
             helpProvider1 = new HelpProvider();
+            PictureCat = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)NumericAmount).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PictureCat).BeginInit();
             SuspendLayout();
             // 
             // OpenMenuIcon
@@ -79,17 +80,6 @@
             LabelStartNewWork.Text = "Для начала работы - введите данные об операциях, мур! Откройте F1 после нажатия на любую из кнопок\r\n\r\n";
             LabelStartNewWork.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.Window;
-            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 111);
-            pictureBox1.TabIndex = 14;
-            pictureBox1.TabStop = false;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToOrderColumns = true;
@@ -103,180 +93,202 @@
             // panel1
             // 
             panel1.AutoScroll = true;
-            panel1.Controls.Add(DoneEntering);
-            panel1.Controls.Add(ChangeData);
-            panel1.Controls.Add(AddData);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(comboBox3);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(comboBox2);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(numericUpDown1);
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(ButtonDoneEntering);
+            panel1.Controls.Add(ButtonChangeData);
+            panel1.Controls.Add(ButtonAddData);
+            panel1.Controls.Add(DatePicker);
+            panel1.Controls.Add(LabelDate);
+            panel1.Controls.Add(ComboBoxCurrency);
+            panel1.Controls.Add(LabelCurrency);
+            panel1.Controls.Add(ComboBoxCaregory);
+            panel1.Controls.Add(LabelCategory);
+            panel1.Controls.Add(ComboBoxType);
+            panel1.Controls.Add(LabelType);
+            panel1.Controls.Add(LabelAmount);
+            panel1.Controls.Add(NumericAmount);
             panel1.Location = new Point(727, 114);
             panel1.Name = "panel1";
             panel1.Size = new Size(345, 598);
             panel1.TabIndex = 18;
             // 
-            // DoneEntering
+            // ButtonDoneEntering
             // 
-            DoneEntering.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            DoneEntering.Location = new Point(106, 518);
-            DoneEntering.Name = "DoneEntering";
-            DoneEntering.Size = new Size(144, 65);
-            DoneEntering.TabIndex = 13;
-            DoneEntering.Text = "Готово";
-            DoneEntering.UseVisualStyleBackColor = true;
-            DoneEntering.Click += DoneEntering_Click;
+            ButtonDoneEntering.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ButtonDoneEntering.Location = new Point(17, 518);
+            ButtonDoneEntering.Name = "ButtonDoneEntering";
+            ButtonDoneEntering.Size = new Size(144, 65);
+            ButtonDoneEntering.TabIndex = 13;
+            ButtonDoneEntering.Text = "Готово";
+            ButtonDoneEntering.UseVisualStyleBackColor = true;
+            ButtonDoneEntering.Click += DoneEntering_Click;
             // 
-            // ChangeData
+            // ButtonChangeData
             // 
-            ChangeData.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            ChangeData.Location = new Point(193, 447);
-            ChangeData.Name = "ChangeData";
-            ChangeData.Size = new Size(144, 65);
-            ChangeData.TabIndex = 12;
-            ChangeData.Text = "Изменить";
-            ChangeData.UseVisualStyleBackColor = true;
-            ChangeData.Click += ChangeData_Click;
+            ButtonChangeData.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ButtonChangeData.Location = new Point(193, 447);
+            ButtonChangeData.Name = "ButtonChangeData";
+            ButtonChangeData.Size = new Size(144, 65);
+            ButtonChangeData.TabIndex = 12;
+            ButtonChangeData.Text = "Изменить";
+            ButtonChangeData.UseVisualStyleBackColor = true;
+            ButtonChangeData.Click += ChangeData_Click;
             // 
-            // AddData
+            // ButtonAddData
             // 
-            AddData.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            AddData.Location = new Point(17, 447);
-            AddData.Name = "AddData";
-            AddData.Size = new Size(144, 65);
-            AddData.TabIndex = 11;
-            AddData.Text = "Добавить";
-            AddData.UseVisualStyleBackColor = true;
-            AddData.Click += AddData_Click;
+            ButtonAddData.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            ButtonAddData.Location = new Point(17, 447);
+            ButtonAddData.Name = "ButtonAddData";
+            ButtonAddData.Size = new Size(144, 65);
+            ButtonAddData.TabIndex = 11;
+            ButtonAddData.Text = "Добавить";
+            ButtonAddData.UseVisualStyleBackColor = true;
+            ButtonAddData.Click += AddData_Click;
             // 
-            // dateTimePicker1
+            // DatePicker
             // 
-            dateTimePicker1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            dateTimePicker1.Location = new Point(17, 396);
-            dateTimePicker1.MaxDate = new DateTime(2026, 6, 20, 0, 0, 0, 0);
-            dateTimePicker1.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(320, 34);
-            dateTimePicker1.TabIndex = 10;
-            dateTimePicker1.Value = new DateTime(2026, 5, 12, 0, 0, 0, 0);
+            DatePicker.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            DatePicker.Location = new Point(17, 396);
+            DatePicker.MaxDate = new DateTime(2026, 6, 20, 0, 0, 0, 0);
+            DatePicker.MinDate = new DateTime(2000, 1, 1, 0, 0, 0, 0);
+            DatePicker.Name = "DatePicker";
+            DatePicker.Size = new Size(320, 34);
+            DatePicker.TabIndex = 10;
+            DatePicker.Value = new DateTime(2026, 5, 12, 0, 0, 0, 0);
             // 
-            // label5
+            // LabelDate
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label5.Location = new Point(88, 353);
-            label5.Name = "label5";
-            label5.Size = new Size(201, 34);
-            label5.TabIndex = 9;
-            label5.Text = "Дата операции";
-            label5.Click += label5_Click;
+            LabelDate.AutoSize = true;
+            LabelDate.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelDate.Location = new Point(88, 353);
+            LabelDate.Name = "LabelDate";
+            LabelDate.Size = new Size(201, 34);
+            LabelDate.TabIndex = 9;
+            LabelDate.Text = "Дата операции";
+            LabelDate.Click += label5_Click;
             // 
-            // comboBox3
+            // ComboBoxCurrency
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Рубли", "Доллары" });
-            comboBox3.Location = new Point(16, 302);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(320, 34);
-            comboBox3.TabIndex = 8;
+            ComboBoxCurrency.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboBoxCurrency.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ComboBoxCurrency.FormattingEnabled = true;
+            ComboBoxCurrency.Items.AddRange(new object[] { "Рубли", "Доллары" });
+            ComboBoxCurrency.Location = new Point(16, 302);
+            ComboBoxCurrency.Name = "ComboBoxCurrency";
+            ComboBoxCurrency.Size = new Size(320, 34);
+            ComboBoxCurrency.TabIndex = 8;
             // 
-            // label4
+            // LabelCurrency
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(129, 265);
-            label4.Name = "label4";
-            label4.Size = new Size(111, 34);
-            label4.TabIndex = 7;
-            label4.Text = "Валюта";
+            LabelCurrency.AutoSize = true;
+            LabelCurrency.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelCurrency.Location = new Point(129, 265);
+            LabelCurrency.Name = "LabelCurrency";
+            LabelCurrency.Size = new Size(111, 34);
+            LabelCurrency.TabIndex = 7;
+            LabelCurrency.Text = "Валюта";
             // 
-            // comboBox2
+            // ComboBoxCaregory
             // 
-            comboBox2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Продукты", "Кафе", "Транспорт", "Доставка", "Одежда", "Электротехника" });
-            comboBox2.Location = new Point(17, 214);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(320, 34);
-            comboBox2.TabIndex = 6;
+            ComboBoxCaregory.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ComboBoxCaregory.FormattingEnabled = true;
+            ComboBoxCaregory.Items.AddRange(new object[] { "Продукты", "Кафе", "Транспорт", "Доставка", "Одежда", "Электротехника" });
+            ComboBoxCaregory.Location = new Point(17, 214);
+            ComboBoxCaregory.Name = "ComboBoxCaregory";
+            ComboBoxCaregory.Size = new Size(320, 34);
+            ComboBoxCaregory.TabIndex = 6;
             // 
-            // label3
+            // LabelCategory
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label3.Location = new Point(46, 177);
-            label3.Name = "label3";
-            label3.Size = new Size(272, 34);
-            label3.TabIndex = 5;
-            label3.Text = "Категория операции";
+            LabelCategory.AutoSize = true;
+            LabelCategory.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelCategory.Location = new Point(46, 177);
+            LabelCategory.Name = "LabelCategory";
+            LabelCategory.Size = new Size(272, 34);
+            LabelCategory.TabIndex = 5;
+            LabelCategory.Text = "Категория операции";
             // 
-            // comboBox1
+            // ComboBoxType
             // 
-            comboBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Зачисление", "Перевод", "Снятие", "Списание" });
-            comboBox1.Location = new Point(17, 126);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(320, 34);
-            comboBox1.TabIndex = 4;
+            ComboBoxType.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ComboBoxType.FormattingEnabled = true;
+            ComboBoxType.Items.AddRange(new object[] { "Зачисление", "Перевод", "Снятие", "Списание" });
+            ComboBoxType.Location = new Point(17, 126);
+            ComboBoxType.Name = "ComboBoxType";
+            ComboBoxType.Size = new Size(320, 34);
+            ComboBoxType.TabIndex = 4;
             // 
-            // label2
+            // LabelType
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(88, 89);
-            label2.Name = "label2";
-            label2.Size = new Size(193, 34);
-            label2.TabIndex = 3;
-            label2.Text = "Тип операции";
+            LabelType.AutoSize = true;
+            LabelType.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelType.Location = new Point(88, 89);
+            LabelType.Name = "LabelType";
+            LabelType.Size = new Size(193, 34);
+            LabelType.TabIndex = 3;
+            LabelType.Text = "Тип операции";
             // 
-            // label1
+            // LabelAmount
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(64, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(232, 34);
-            label1.TabIndex = 1;
-            label1.Text = "Размер операции";
-            label1.Click += label1_Click;
+            LabelAmount.AutoSize = true;
+            LabelAmount.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelAmount.Location = new Point(64, 0);
+            LabelAmount.Name = "LabelAmount";
+            LabelAmount.Size = new Size(232, 34);
+            LabelAmount.TabIndex = 1;
+            LabelAmount.Text = "Размер операции";
+            LabelAmount.Click += label1_Click;
             // 
-            // numericUpDown1
+            // NumericAmount
             // 
-            numericUpDown1.DecimalPlaces = 2;
-            numericUpDown1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            numericUpDown1.Location = new Point(85, 37);
-            numericUpDown1.Maximum = new decimal(new int[] { -1530494976, 232830, 0, 0 });
-            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 131072 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(196, 34);
-            numericUpDown1.TabIndex = 0;
-            numericUpDown1.Value = new decimal(new int[] { 100010, 0, 0, 131072 });
+            NumericAmount.DecimalPlaces = 2;
+            NumericAmount.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            NumericAmount.Location = new Point(85, 37);
+            NumericAmount.Maximum = new decimal(new int[] { -1530494976, 232830, 0, 0 });
+            NumericAmount.Minimum = new decimal(new int[] { 1, 0, 0, 131072 });
+            NumericAmount.Name = "NumericAmount";
+            NumericAmount.Size = new Size(196, 34);
+            NumericAmount.TabIndex = 0;
+            NumericAmount.Value = new decimal(new int[] { 100010, 0, 0, 131072 });
+            // 
+            // PictureCat
+            // 
+            PictureCat.BackColor = SystemColors.Window;
+            PictureCat.BorderStyle = BorderStyle.FixedSingle;
+            PictureCat.Image = (Image)resources.GetObject("PictureCat.Image");
+            PictureCat.Location = new Point(0, 0);
+            PictureCat.Name = "PictureCat";
+            PictureCat.Size = new Size(109, 111);
+            PictureCat.TabIndex = 19;
+            PictureCat.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button1.Location = new Point(193, 518);
+            button1.Name = "button1";
+            button1.Size = new Size(144, 65);
+            button1.TabIndex = 14;
+            button1.Text = "Удалить";
+            button1.UseVisualStyleBackColor = true;
             // 
             // StartNewWork
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(PictureCat);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
             Controls.Add(OpenMenuIcon);
             Controls.Add(LabelStartNewWork);
-            Controls.Add(pictureBox1);
             Name = "StartNewWork";
             Size = new Size(1075, 712);
             ((System.ComponentModel.ISupportInitialize)OpenMenuIcon).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NumericAmount).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PictureCat).EndInit();
             ResumeLayout(false);
         }
 
@@ -284,22 +296,23 @@
 
         private PictureBox OpenMenuIcon;
         private Label LabelStartNewWork;
-        private PictureBox pictureBox1;
         private DataGridView dataGridView1;
         private Panel panel1;
-        private Label label1;
-        private NumericUpDown numericUpDown1;
-        private Label label2;
-        private ComboBox comboBox3;
-        private Label label4;
-        private ComboBox comboBox2;
-        private Label label3;
-        private ComboBox comboBox1;
-        private Label label5;
-        private DateTimePicker dateTimePicker1;
-        private Button ChangeData;
-        private Button AddData;
-        private Button DoneEntering;
+        private Label LabelAmount;
+        private NumericUpDown NumericAmount;
+        private Label LabelType;
+        private ComboBox ComboBoxCurrency;
+        private Label LabelCurrency;
+        private ComboBox ComboBoxCaregory;
+        private Label LabelCategory;
+        private ComboBox ComboBoxType;
+        private Label LabelDate;
+        private DateTimePicker DatePicker;
+        private Button ButtonChangeData;
+        private Button ButtonAddData;
+        private Button ButtonDoneEntering;
         private HelpProvider helpProvider1;
+        private PictureBox PictureCat;
+        private Button button1;
     }
 }

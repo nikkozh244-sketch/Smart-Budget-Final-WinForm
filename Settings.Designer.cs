@@ -42,24 +42,24 @@
             LabelSettings = new Label();
             CatPicture = new PictureBox();
             panel1 = new Panel();
-            checkBox3 = new CheckBox();
-            label4 = new Label();
-            label5 = new Label();
+            CheckDogMode = new CheckBox();
+            LabelDogModeDescription = new Label();
+            LabelDogMode = new Label();
             IconDog = new PictureBox();
-            checkBox2 = new CheckBox();
-            label2 = new Label();
-            label3 = new Label();
+            CheckLeftHanded = new CheckBox();
+            LabelLeftHandedDescription = new Label();
+            LabelLeftHandedMode = new Label();
             IconMouse = new PictureBox();
-            checkBox1 = new CheckBox();
+            CheckDarkTheme = new CheckBox();
             LabelDarkOnOrOff = new Label();
             LabelDarkTheme = new Label();
             IconDarkTheme = new PictureBox();
-            comboBox1 = new ComboBox();
-            label1 = new Label();
+            ComboBoxChooseLanguage = new ComboBox();
+            LabelLanguageDescription = new Label();
             LabelChangeLanguage = new Label();
             IconTranslate = new PictureBox();
-            numericUpDown1 = new NumericUpDown();
-            LabelEnterDollar = new Label();
+            NumericDollarChoose = new NumericUpDown();
+            LabelDollarDescriprtion = new Label();
             LabelChangeDollar = new Label();
             IconDollar = new PictureBox();
             helpProvider1 = new HelpProvider();
@@ -71,7 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)IconMouse).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IconDarkTheme).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IconTranslate).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)NumericDollarChoose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)IconDollar).BeginInit();
             SuspendLayout();
             // 
@@ -231,24 +231,24 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(checkBox3);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label5);
+            panel1.Controls.Add(CheckDogMode);
+            panel1.Controls.Add(LabelDogModeDescription);
+            panel1.Controls.Add(LabelDogMode);
             panel1.Controls.Add(IconDog);
-            panel1.Controls.Add(checkBox2);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(CheckLeftHanded);
+            panel1.Controls.Add(LabelLeftHandedDescription);
+            panel1.Controls.Add(LabelLeftHandedMode);
             panel1.Controls.Add(IconMouse);
-            panel1.Controls.Add(checkBox1);
+            panel1.Controls.Add(CheckDarkTheme);
             panel1.Controls.Add(LabelDarkOnOrOff);
             panel1.Controls.Add(LabelDarkTheme);
             panel1.Controls.Add(IconDarkTheme);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label1);
+            panel1.Controls.Add(ComboBoxChooseLanguage);
+            panel1.Controls.Add(LabelLanguageDescription);
             panel1.Controls.Add(LabelChangeLanguage);
             panel1.Controls.Add(IconTranslate);
-            panel1.Controls.Add(numericUpDown1);
-            panel1.Controls.Add(LabelEnterDollar);
+            panel1.Controls.Add(NumericDollarChoose);
+            panel1.Controls.Add(LabelDollarDescriprtion);
             panel1.Controls.Add(LabelChangeDollar);
             panel1.Controls.Add(IconDollar);
             panel1.Controls.Add(ButtonResetSettings);
@@ -258,36 +258,36 @@
             panel1.Size = new Size(1075, 582);
             panel1.TabIndex = 11;
             // 
-            // checkBox3
+            // CheckDogMode
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            checkBox3.Location = new Point(935, 354);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(127, 30);
-            checkBox3.TabIndex = 30;
-            checkBox3.Text = "Вкл/Выкл";
-            checkBox3.UseVisualStyleBackColor = true;
+            CheckDogMode.AutoSize = true;
+            CheckDogMode.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            CheckDogMode.Location = new Point(935, 354);
+            CheckDogMode.Name = "CheckDogMode";
+            CheckDogMode.Size = new Size(127, 30);
+            CheckDogMode.TabIndex = 30;
+            CheckDogMode.Text = "Вкл/Выкл";
+            CheckDogMode.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // LabelDogModeDescription
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label4.Location = new Point(623, 353);
-            label4.Name = "label4";
-            label4.Size = new Size(311, 26);
-            label4.TabIndex = 29;
-            label4.Text = "Меняет помощника на собаку:";
+            LabelDogModeDescription.AutoSize = true;
+            LabelDogModeDescription.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelDogModeDescription.Location = new Point(623, 353);
+            LabelDogModeDescription.Name = "LabelDogModeDescription";
+            LabelDogModeDescription.Size = new Size(311, 26);
+            LabelDogModeDescription.TabIndex = 29;
+            LabelDogModeDescription.Text = "Меняет помощника на собаку:";
             // 
-            // label5
+            // LabelDogMode
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label5.Location = new Point(623, 309);
-            label5.Name = "label5";
-            label5.Size = new Size(353, 42);
-            label5.TabIndex = 28;
-            label5.Text = "\"Режим собачника\"";
+            LabelDogMode.AutoSize = true;
+            LabelDogMode.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            LabelDogMode.Location = new Point(623, 309);
+            LabelDogMode.Name = "LabelDogMode";
+            LabelDogMode.Size = new Size(353, 42);
+            LabelDogMode.TabIndex = 28;
+            LabelDogMode.Text = "\"Режим собачника\"";
             // 
             // IconDog
             // 
@@ -298,36 +298,36 @@
             IconDog.TabIndex = 27;
             IconDog.TabStop = false;
             // 
-            // checkBox2
+            // CheckLeftHanded
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            checkBox2.Location = new Point(899, 214);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(127, 30);
-            checkBox2.TabIndex = 26;
-            checkBox2.Text = "Вкл/Выкл";
-            checkBox2.UseVisualStyleBackColor = true;
+            CheckLeftHanded.AutoSize = true;
+            CheckLeftHanded.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            CheckLeftHanded.Location = new Point(899, 214);
+            CheckLeftHanded.Name = "CheckLeftHanded";
+            CheckLeftHanded.Size = new Size(127, 30);
+            CheckLeftHanded.TabIndex = 26;
+            CheckLeftHanded.Text = "Вкл/Выкл";
+            CheckLeftHanded.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // LabelLeftHandedDescription
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label2.Location = new Point(623, 213);
-            label2.Name = "label2";
-            label2.Size = new Size(270, 26);
-            label2.TabIndex = 25;
-            label2.Text = "Отзеркаливает интерфейс:";
+            LabelLeftHandedDescription.AutoSize = true;
+            LabelLeftHandedDescription.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelLeftHandedDescription.Location = new Point(623, 213);
+            LabelLeftHandedDescription.Name = "LabelLeftHandedDescription";
+            LabelLeftHandedDescription.Size = new Size(270, 26);
+            LabelLeftHandedDescription.TabIndex = 25;
+            LabelLeftHandedDescription.Text = "Отзеркаливает интерфейс:";
             // 
-            // label3
+            // LabelLeftHandedMode
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(623, 169);
-            label3.Name = "label3";
-            label3.Size = new Size(290, 42);
-            label3.TabIndex = 24;
-            label3.Text = "\"Режим левши\"";
+            LabelLeftHandedMode.AutoSize = true;
+            LabelLeftHandedMode.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            LabelLeftHandedMode.Location = new Point(623, 169);
+            LabelLeftHandedMode.Name = "LabelLeftHandedMode";
+            LabelLeftHandedMode.Size = new Size(290, 42);
+            LabelLeftHandedMode.TabIndex = 24;
+            LabelLeftHandedMode.Text = "\"Режим левши\"";
             // 
             // IconMouse
             // 
@@ -339,16 +339,16 @@
             IconMouse.TabStop = false;
             IconMouse.Click += pictureBox4_Click;
             // 
-            // checkBox1
+            // CheckDarkTheme
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            checkBox1.Location = new Point(384, 352);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(127, 30);
-            checkBox1.TabIndex = 22;
-            checkBox1.Text = "Вкл/Выкл";
-            checkBox1.UseVisualStyleBackColor = true;
+            CheckDarkTheme.AutoSize = true;
+            CheckDarkTheme.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            CheckDarkTheme.Location = new Point(384, 352);
+            CheckDarkTheme.Name = "CheckDarkTheme";
+            CheckDarkTheme.Size = new Size(127, 30);
+            CheckDarkTheme.TabIndex = 22;
+            CheckDarkTheme.Text = "Вкл/Выкл";
+            CheckDarkTheme.UseVisualStyleBackColor = true;
             // 
             // LabelDarkOnOrOff
             // 
@@ -379,32 +379,32 @@
             IconDarkTheme.TabIndex = 19;
             IconDarkTheme.TabStop = false;
             // 
-            // comboBox1
+            // ComboBoxChooseLanguage
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Русский", "English" });
-            comboBox1.Location = new Point(384, 210);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(120, 34);
-            comboBox1.TabIndex = 18;
+            ComboBoxChooseLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboBoxChooseLanguage.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            ComboBoxChooseLanguage.FormattingEnabled = true;
+            ComboBoxChooseLanguage.Items.AddRange(new object[] { "Русский", "English" });
+            ComboBoxChooseLanguage.Location = new Point(384, 210);
+            ComboBoxChooseLanguage.Name = "ComboBoxChooseLanguage";
+            ComboBoxChooseLanguage.Size = new Size(120, 34);
+            ComboBoxChooseLanguage.TabIndex = 18;
             // 
-            // label1
+            // LabelLanguageDescription
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(90, 213);
-            label1.Name = "label1";
-            label1.Size = new Size(288, 26);
-            label1.TabIndex = 17;
-            label1.Text = "Выберете язык приложения:";
+            LabelLanguageDescription.AutoSize = true;
+            LabelLanguageDescription.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelLanguageDescription.Location = new Point(90, 213);
+            LabelLanguageDescription.Name = "LabelLanguageDescription";
+            LabelLanguageDescription.Size = new Size(288, 26);
+            LabelLanguageDescription.TabIndex = 17;
+            LabelLanguageDescription.Text = "Выберете язык приложения:";
             // 
             // LabelChangeLanguage
             // 
             LabelChangeLanguage.AutoSize = true;
             LabelChangeLanguage.Font = new Font("Times New Roman", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LabelChangeLanguage.Location = new Point(90, 169);
+            LabelChangeLanguage.Location = new Point(90, 171);
             LabelChangeLanguage.Name = "LabelChangeLanguage";
             LabelChangeLanguage.Size = new Size(238, 42);
             LabelChangeLanguage.TabIndex = 16;
@@ -419,30 +419,30 @@
             IconTranslate.TabIndex = 15;
             IconTranslate.TabStop = false;
             // 
-            // numericUpDown1
+            // NumericDollarChoose
             // 
-            numericUpDown1.BackColor = Color.White;
-            numericUpDown1.BorderStyle = BorderStyle.FixedSingle;
-            numericUpDown1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            numericUpDown1.ForeColor = SystemColors.InfoText;
-            numericUpDown1.Location = new Point(728, 81);
-            numericUpDown1.Maximum = new decimal(new int[] { 121, 0, 0, 0 });
-            numericUpDown1.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(58, 34);
-            numericUpDown1.TabIndex = 14;
-            numericUpDown1.TextAlign = HorizontalAlignment.Center;
-            numericUpDown1.Value = new decimal(new int[] { 80, 0, 0, 0 });
+            NumericDollarChoose.BackColor = Color.White;
+            NumericDollarChoose.BorderStyle = BorderStyle.FixedSingle;
+            NumericDollarChoose.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            NumericDollarChoose.ForeColor = SystemColors.InfoText;
+            NumericDollarChoose.Location = new Point(728, 81);
+            NumericDollarChoose.Maximum = new decimal(new int[] { 121, 0, 0, 0 });
+            NumericDollarChoose.Minimum = new decimal(new int[] { 3, 0, 0, 0 });
+            NumericDollarChoose.Name = "NumericDollarChoose";
+            NumericDollarChoose.Size = new Size(58, 34);
+            NumericDollarChoose.TabIndex = 14;
+            NumericDollarChoose.TextAlign = HorizontalAlignment.Center;
+            NumericDollarChoose.Value = new decimal(new int[] { 80, 0, 0, 0 });
             // 
-            // LabelEnterDollar
+            // LabelDollarDescriprtion
             // 
-            LabelEnterDollar.AutoSize = true;
-            LabelEnterDollar.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            LabelEnterDollar.Location = new Point(399, 83);
-            LabelEnterDollar.Name = "LabelEnterDollar";
-            LabelEnterDollar.Size = new Size(323, 26);
-            LabelEnterDollar.TabIndex = 13;
-            LabelEnterDollar.Text = "Введите текущий курс доллара:";
+            LabelDollarDescriprtion.AutoSize = true;
+            LabelDollarDescriprtion.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LabelDollarDescriprtion.Location = new Point(399, 83);
+            LabelDollarDescriprtion.Name = "LabelDollarDescriprtion";
+            LabelDollarDescriprtion.Size = new Size(323, 26);
+            LabelDollarDescriprtion.TabIndex = 13;
+            LabelDollarDescriprtion.Text = "Введите текущий курс доллара:";
             // 
             // LabelChangeDollar
             // 
@@ -484,7 +484,7 @@
             ((System.ComponentModel.ISupportInitialize)IconMouse).EndInit();
             ((System.ComponentModel.ISupportInitialize)IconDarkTheme).EndInit();
             ((System.ComponentModel.ISupportInitialize)IconTranslate).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NumericDollarChoose).EndInit();
             ((System.ComponentModel.ISupportInitialize)IconDollar).EndInit();
             ResumeLayout(false);
         }
@@ -499,23 +499,23 @@
         private Panel panel1;
         private Label LabelChangeDollar;
         private PictureBox IconDollar;
-        private Label LabelEnterDollar;
-        private NumericUpDown numericUpDown1;
+        private Label LabelDollarDescriprtion;
+        private NumericUpDown NumericDollarChoose;
         private PictureBox IconTranslate;
         private Label LabelChangeLanguage;
-        private ComboBox comboBox1;
-        private Label label1;
-        private CheckBox checkBox1;
+        private ComboBox ComboBoxChooseLanguage;
+        private Label LabelLanguageDescription;
+        private CheckBox CheckDarkTheme;
         private Label LabelDarkOnOrOff;
         private Label LabelDarkTheme;
         private PictureBox IconDarkTheme;
-        private CheckBox checkBox3;
-        private Label label4;
-        private Label label5;
+        private CheckBox CheckDogMode;
+        private Label LabelDogModeDescription;
+        private Label LabelDogMode;
         private PictureBox IconDog;
-        private CheckBox checkBox2;
-        private Label label2;
-        private Label label3;
+        private CheckBox CheckLeftHanded;
+        private Label LabelLeftHandedDescription;
+        private Label LabelLeftHandedMode;
         private PictureBox IconMouse;
         private Button ButtonReturnToHome;
         private Button ButtonSettings;
